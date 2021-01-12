@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,84 +9,88 @@
 
     <TextView
         android:id="@+id/tv_one"
-        android:layout_width="94dp"
-        android:layout_height="29dp"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Text"
-        android:background="@color/purple_200"
+        android:text="Play Market"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.155" />
 
+
     <TextView
         android:id="@+id/text"
-        android:layout_width="150dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="204dp"
+        android:background=""
         android:gravity="center"
-        android:text="Text two"
+        android:text="Login"
         android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/tv_one"
         app:layout_constraintRight_toRightOf="@id/tv_one"
         app:layout_constraintTop_toBottomOf="@id/tv_one" />
 
     <EditText
-        android:id="@+id/age"
+        android:id="@+id/ed_login"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:hint="lion"
-        android:background="@color/teal_200"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        android:hint=""
         android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/text"
         app:layout_constraintRight_toRightOf="@id/text"
         app:layout_constraintTop_toBottomOf="@+id/text" />
 
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background=""
+        android:gravity="center"
+        android:text="parol"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ed_parol"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/ed_login"
+        app:layout_constraintRight_toRightOf="@id/ed_login" />
+
+
+
     <EditText
-        android:id="@+id/text2"
+        android:id="@+id/ed_parol"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:hint="suzu"
+        android:layout_marginTop="60dp"
+        android:hint=""
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="@id/age"
-        app:layout_constraintRight_toRightOf="@id/age"
-        app:layout_constraintTop_toBottomOf="@+id/age" />
-    <TextView
-        android:id="@+id/home"
-        android:layout_width="94dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="45dp"
-        android:gravity="center"
-        android:text="one"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="@id/text2"
-        app:layout_constraintRight_toRightOf="@id/text2"
-        app:layout_constraintTop_toBottomOf="@id/text2" />
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintLeft_toLeftOf="@id/ed_login"
+        app:layout_constraintRight_toRightOf="@id/ed_login"
+        app:layout_constraintTop_toBottomOf="@+id/ed_login" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="94dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="45dp"
-        android:gravity="center"
-        android:text="one2"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="@id/home"
-        app:layout_constraintRight_toRightOf="@id/home"
-        app:layout_constraintTop_toBottomOf="@id/home" />
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:id="@+id/btn_list2"
+        android:layout_width="225dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:hint="Войти"
+        android:onClick="setClik"
+        android:text="Добавить"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="@id/ed_parol"
+        app:layout_constraintRight_toRightOf="@id/ed_parol"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
